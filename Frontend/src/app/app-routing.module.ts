@@ -16,6 +16,7 @@ import { SavingsComponent } from './savings/savings.component';
 import { ViewsavingsComponent } from './viewsavings/viewsavings.component';
 import { UpdatesavingsComponent } from './updatesavings/updatesavings.component';
 import { UserComponent } from './user/user.component';
+import { ApproveComponent } from './approve/approve.component';
 
 const routes: Routes = [
   {path:'',component:MainhomeComponent},
@@ -33,7 +34,8 @@ const routes: Routes = [
  {path:'viewsavings',component:ViewsavingsComponent},
  {path:'ucan',component:UpdatesavingsComponent},
  {path:'user',component:UserComponent},
- {path:'ul',component:UserloginComponent} 
+ {path:'ul',component:UserloginComponent},
+ {path:'app',component:ApproveComponent}
  
  
  

@@ -26,7 +26,7 @@ Adduser(){
   this.api.adduser(this.register).subscribe(
     (response)=>{
       if(!response.message){
-      this.router.navigate([''])
+      this.router.navigate(['/side'])
       alert("Successfully Added");
       console.log(response)
       }

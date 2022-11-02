@@ -1,24 +1,28 @@
 <div class="container">
-  <div class="row">
-      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-          <div class="row g-10">
-              <form #userlogin="ngForm" (ngSubmit)="Ulogin()">
-                  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                      <h1 align="center" style="background-color:#b64772 ;color:aliceblue;text-shadow:2px">USER LOGIN</h1>
-                      <label for="" class="form label">USERNAME</label>
-                      <input id="" type="text" class="form-control" [(ngModel)]="register.username" name="username">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-10">
+                <form #userlogin="ngForm" (ngSubmit)="Ulogin()">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                       
-                      <label for="" class="form label">PASSWORD</label>
-                      <input id="" type="password" class="form-control" [(ngModel)]="register.password" name="password">
-                      <br>
-                      <button class="btn btn-primary">SIGN IN</button>
-                  </div>
-              </form>
-          </div>
-      </div>
+                        <h1 align="center" style="background-color: #665cf0;color:rgb(255, 255, 255);text-shadow:20px;font-size:250%;">USER LOGIN</h1>
+                        
+                        <div  class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="max-width:370px;margin-top:20px;border:2px solid
+                        black;height:600px;margin-left:35%;background:linear-gradient(to top right, #ffffff 0%, #d8d6eb 100%);
+                        ;border-radius:15px">
+                        <label for="" class="form label" style="margin-top:10%;font-size:150%;margin-left:10%;">USERNAME</label>
+                        <input id="" type="text" class="form-control" [(ngModel)]="register.username" name="username" style="height:35px;width:80%;
+                        margin-left:10%;border:2px solid" placeholder="USERNAME">
+                        <label for="" class="form label" style="margin-top:11%;font-size:150%;margin-left:10%;">PASSWORD</label>
+                        <input id="" type="password" class="form-control" [(ngModel)]="register.password" name="password" style="height:35px;width:80%;
+                        margin-left:10%;border:2px solid" placeholder="PASSWORD">
+                        <br>
+                        <button class="btn btn-primary" style="margin-left:10%;margin-top:11%;background-color:#4a8cf0 ;color:rgb(255, 255, 255)">SIGN IN</button>
+                        <button type="button" class="btn btn-primary" routerLink="" style="margin-left:10%;margin-top:11%;background-color:#4a8cf0 ;color:rgb(255, 255, 255)">Go back</button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
-
-
-<button type="button" class="btn btn-primary" routerLink="" style="margin-left: 120rem;margin-top: -2rem;">Go back</button>
-  

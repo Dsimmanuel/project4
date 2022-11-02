@@ -16,7 +16,7 @@
       <input name="email" type="text" placeholder="Enter Email" [(ngModel)]="register.email" required>
 
       <label for="email"><b>USERNAME</b></label>
-      <input type="text" placeholder="Enter Email" name="uname"  [(ngModel)]="register.username" required>
+      <input type="text" placeholder="Enter username" name="uname"  [(ngModel)]="register.username" required>
 
       <label for="PASSWORD"><b>PASSWORD</b></label>
       <input name="password" type="password" placeholder="Enter password" [(ngModel)]="register.password"  required>
@@ -27,6 +27,6 @@
     <div *ngIf="message" align="center"><p><b>{{message}}</b></p></div>
   </form>
   <div align="right" style="margin-right:150px;margin-bottom:40px;color:blue">
-    <a href="#" class="btn btn-primary">Go Back</a>
+    <a  class="btn btn-primary" routerLink="/viewuser">Go Back</a>
     </div>
     

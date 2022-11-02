@@ -1,26 +1,30 @@
-
-<div class="container">
+<h1 align="center" style="background-color:rgb(180, 156, 156);color:rgb(255, 255, 255);text-shadow:20px;font-size:500%;">USER SAVINGS</h1>
+<div style="display:flex;flex-direction:row">
+<div class="container" style="background-color:whitesmoke">
   <br>
     <form  #passbook="ngForm" (ngSubmit)="Viewsavings()">
-      <label for="userame" class="form-label">username:</label>
-      <input type="text" class="form-control" id="username" name="username" [(ngModel)]="cash.username">
+      <label for="userame" class="form-label" style="font-size:20px;font-weight:1000;margin-top:10%">username:</label>
+      <input type="text" class="form-control" id="username" name="username" [(ngModel)]="cash.username" 
+      style="height:40px;box-shadow:10px 1px 50px rgba(0, 0, 0, 0.24);margin-top:10%" placeholder="ENTER THE USERNAME">
   
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" style="width:30%;margin-left:35%;margin-top:10%">
     </form>
   </div>
-  
- 
-  <div class="container">
+
+  <div class="container" style="box-shadow:10px 1px 50px rgba(0, 0, 0, 0.24);background-color:whitesmoke">
     <br>
     <div class="card" >
-      <img src="assets/bond.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">username: {{data1.username}}</h5>
-        <p class="card-text">Date: {{data1.date}}</p>
-        <p class="card-text">Deposite Amount: {{data1.deposite}}</p>
+      <img src="assets/savings.jpg" class="card-img-top" alt="...">
+      <hr />
+      <div class="card-body" style="box-shadow:10px 1px 50px rgba(0, 0, 0, 0.24)">
+        <h5 class="card-title" style="font-size:20px;font-weight:1000">username:{{data1.username}}</h5>
+        <hr />
+        <h5 class="card-text" style="font-size:20px;font-weight:1000">Date:{{data1.date}}</h5>
+        <hr />
+        <h5 class="card-text" style="font-size:20px;font-weight:1000">Deposite Amount:{{data1.deposite}}</h5>
         
       </div>
     </div>
       
     </div>
-    
+</div>

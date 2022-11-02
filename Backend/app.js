@@ -402,7 +402,20 @@ app.delete('/rejectloan/:id',function(req,res){
     })
 })
 
-
+//view savings table
+app.delete('/deletesavings/:id',function(req,res){
+    const id = req.params.id;
+    save.findByIdAndDelete(id,(error,data)=>{
+       if(error){
+        res.send(error)
+       }else{
+        console.log("delete")
+        res.status(200).json({
+            msg:data
+        })
+       }
+    })
+})
 app.listen(3000,()=>{
     console.log("Successfully running on http://localhost:3000")
 })

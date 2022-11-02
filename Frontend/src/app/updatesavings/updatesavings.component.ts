@@ -26,5 +26,14 @@ export class UpdatesavingsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  Deletesavings(i:any){
+    this.api.deletesavings(i).subscribe(
+    (response)=>{
+      console.log(response)
+      this.data=this.data.filter((u:any)=>u!==i)
+    }
+    )
+  }
+
 data:any=[]
 }

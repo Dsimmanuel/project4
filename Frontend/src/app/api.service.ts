@@ -95,7 +95,10 @@ vrequest=(loan:any)=>{
   return this.http.get<any>("http://localhost:3000/home")
 }
 
-
+//view savings delete
+deletesavings=(id:any)=>{
+  return this.http.delete<any>("http://localhost:3000/deletesavings/"+id._id)
+}
 
 }
 

@@ -1,44 +1,78 @@
-<div style="background-color:rgb(255, 213, 239)">
-  <div>
-          <div style="margin-top:30px;">
-          <hr />
-         <img style="height:30%" src="assets/imag.png" />
-         <hr />
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-          <div class="row g-5" style="margin-top:50px;display:flex;flex-direction: column;justify-content: center;align-items: center;">
-            <div align="center" style="width:50%;" class="col-sm-12">
-              <div class="card">
-                <div class="card-body" style="box-shadow:10px 1px 50px rgba(0, 0, 0, 0.24)">
-                  <h2 class="card-title">Loan Details</h2>
-                  <i><h5 class="card-text">This page will give you the details about loan scheme and further details about choosed loan.</h5></i>
-                  <a href="#loan" class="btn btn-primary"  routerLink="/manloan" routerLinkActive="active-link">LOANS</a>
-                </div>
-              </div>
-            </div>
-            <div align="center"  style="width:50%;" class="col-sm-12">
-              <div  class="card">
-                <div class="card-body" style="box-shadow:10px 1px 50px rgba(0, 0, 0, 0.24)">
-                  <h2 class="card-title">Savings Details</h2>
-                  <i><h5 class="card-text">This option will help you to check the details about your savings.</h5></i>
-                  <a href="#" class="btn btn-primary" routerLink="/view" routerLinkActive="active-link">Check</a>
-                </div>
-              </div>
-            </div>
-            <div  align="center"  style="width:50%" class="col-sm-12">
-              <div class="card">
-                <div class="card-body" style="box-shadow:10px 1px 50px rgba(0, 0, 0, 0.24)">
-                  <h2 class="card-title">Loan Status</h2>
-                  <i><h5 class="card-text">To View the loan status.</h5></i>
-                  <a href="#" class="btn btn-primary">View</a>
-                </div>
-              </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/save.jpg" class="d-block w-100" height="550px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p></p>
             </div>
           </div>
-          
-          
-  
+          <div class="carousel-item">
+            <img src="assets/house.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/per.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
+<br/><br/><br/><br/><br/><br/><br/>
 
-<div align="right" style="margin-right:150px;margin-bottom:40px">
-<a class="btn btn-primary" routerLink="/user" style="margin-right:-8rem">Go Back</a>
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+      <div class="card" >
+        <img src="assets/loan.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Loans</b></h5>
+          <p class="card-text"></p>
+          <a  class="btn btn-primary" routerLink="/manloan" routerLinkActive="active-link">Check</a>
+        </div>
+      </div>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+      <div class="card" >
+        <img src="assets/saves.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Savings</b></h5>
+          <p class="card-text"></p>
+          <a  class="btn btn-primary" routerLink="/viewsavings" routerLinkActive="active-link" >Check</a>
+        </div>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+      <div class="card" align="center">
+        <img src="assets/app.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Status</b></h5>
+          <p class="card-text"></p>
+          <a  class="btn btn-primary" routerLink="/" routerLinkActive="active-link" >Check</a>
+        </div>
+    </div>
+  </div>
 </div>
