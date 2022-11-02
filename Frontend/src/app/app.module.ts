@@ -24,6 +24,7 @@ import { SavingsComponent } from './savings/savings.component';
 import { ViewsavingsComponent } from './viewsavings/viewsavings.component';
 import { UpdatesavingsComponent } from './updatesavings/updatesavings.component';
 import { ApproveComponent } from './approve/approve.component';
+import { UapprovedloansComponent } from './uapprovedloans/uapprovedloans.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ApproveComponent } from './approve/approve.component';
     SavingsComponent,
     ViewsavingsComponent,
     UpdatesavingsComponent,
-    ApproveComponent
+    ApproveComponent,
+    UapprovedloansComponent
   ],
   imports: [
     BrowserModule,

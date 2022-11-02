@@ -20,8 +20,10 @@ export class UserComponent implements OnInit {
   }
   Ulogin()
   {
+    console.log(this.register)
     this.api.ulogin(this.register).subscribe((register) =>{
       if(register.success === true){
+        console.log(register)
         this.router.navigate(['/ul'])
       }else{
         alert(register.success)

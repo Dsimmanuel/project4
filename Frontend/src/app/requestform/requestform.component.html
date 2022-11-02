@@ -12,7 +12,8 @@
         <table class="table table-striped">
             <thead>
                 <tr align="center">
-                  
+                  <th scope="col"><b>Loan Id</b></th>
+                  <th scope="col"><b>Loan Name</b></th>
                   <th scope="col"><b>Applicant Name</b></th>
                   <th scope="col"><b>Annual Income</b></th>
                   <th scope="col"><b>Aadhar Number</b></th>
@@ -25,6 +26,16 @@
 
               <tbody>
                 <tr *ngFor="let i of data">
+                  <td>
+                    <div align="center">
+                      {{i.loanid}}
+                    </div>
+                  </td>
+                  <td>
+                    <div align="center">
+                      {{i.loanName}}
+                    </div>
+                  </td>
                   <td>
                     <div align="center">
                       {{i.name}}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -16,7 +17,8 @@ export class ManageloanComponent implements OnInit {
 
   }
 
-  constructor(private api:ApiService) {
+  constructor(private api:ApiService,
+    private router:Router) {
     api.viewloan().subscribe(
     
       (response)=>{
@@ -55,6 +57,12 @@ Updateloan(i:any){
       window.location.reload()
     }
   )
+}
+
+manageloan(i:any){
+  console.log(i)
+  this.api.saveLoan(i)
+  this.router.navigate(['/request'])
 }
 
 

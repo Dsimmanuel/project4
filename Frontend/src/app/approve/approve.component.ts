@@ -17,7 +17,7 @@ export class ApproveComponent implements OnInit {
   }
 
   constructor(private api:ApiService) {
-    api.viewrequest().subscribe(
+    api.Viewrequest().subscribe(
       (response)=>{
         this.data=response
       }
@@ -25,6 +25,16 @@ export class ApproveComponent implements OnInit {
    }
 
   ngOnInit(): void {
+  }
+  deleteapproved(i:any){
+    this.api.Deleteapproved(i._id).subscribe(
+      (data)=>{
+        console.log(data)
+        this.data=this.data.filter((u:any)=>u!==i)
+
+        
+      }
+    )
   }
   
 data:any=[]

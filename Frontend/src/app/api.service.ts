@@ -5,8 +5,24 @@ import { LoanComponent } from './loan/loan.component';
   providedIn: 'root'
 })
 export class ApiService {
-
+  Loan:any=[]
   constructor(private http:HttpClient) { }
+
+
+  public saveLoan(loan: any): void {
+    window.sessionStorage.removeItem(this.Loan);
+    window.sessionStorage.setItem(this.Loan, JSON.stringify(loan));
+
+  }
+
+  public getLoan(): any {
+    const loan = window.sessionStorage.getItem(this.Loan);
+    if (loan) {
+      return JSON.parse(loan);
+    }
+  }
+
+
 
   viewuser=()=>{
     return this.http.get<any>("http://localhost:3000/home")
@@ -79,7 +95,7 @@ return this.http.delete<any>("http://localhost:3000/rejectloan/"+id)
 }
 
 Viewrequest=()=>{
-  return this.http.get<any>("http://localhost:3000")
+  return this.http.get<any>("http://localhost:3000/Viewrqt")
 }
 
 //approved
@@ -98,6 +114,9 @@ vrequest=(loan:any)=>{
 //view savings delete
 deletesavings=(id:any)=>{
   return this.http.delete<any>("http://localhost:3000/deletesavings/"+id._id)
+}
+Deleteapproved=(id:any)=>{
+  return this.http.delete<any>("http://localhost:3000/deleteapproved/"+id)
 }
 
 }

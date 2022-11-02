@@ -8,6 +8,8 @@ import { ApiService } from '../api.service';
 })
 export class LoanrequestComponent implements OnInit {
   apply={
+    loanid:"",
+    loanName:"",
     name:"",
     income:"",
     aadhar:"",
@@ -16,10 +18,16 @@ export class LoanrequestComponent implements OnInit {
     ifsc:""
 
   }
-
+  loan:any=[]
   constructor(
      private api:ApiService
-    ) { }
+    ) { 
+      this.loan=this.api.getLoan()
+      if(this.loan){
+        this.apply.loanid=this.loan.loanid
+        this.apply.loanName=this.loan.loanName
+      }
+    }
 
   ngOnInit(): void {
 
