@@ -369,7 +369,6 @@ app.post("/register",(req,res)=>{
 
 app.post("/approveloan",(req,res)=>{
     const data=req.body
-    data.role="student"
     console.log(data)
     const ob=new apr(data)
     ob.save(
@@ -402,6 +401,20 @@ app.delete('/rejectloan/:id',function(req,res){
     })
 })
 
+
+app.delete('/deleteapproved/:id',function(req,res){
+    const id = req.params.id;
+    apr.findByIdAndDelete(id,(error,data)=>{
+       if(error){
+        res.send(error)
+       }else{
+        res.status(200).json({
+            msg:data
+        })
+       }
+    })
+})
+
 //view savings table
 app.delete('/deletesavings/:id',function(req,res){
     const id = req.params.id;
@@ -416,6 +429,22 @@ app.delete('/deletesavings/:id',function(req,res){
        }
     })
 })
+
+app.get("/Viewrqt",(req,res)=>{
+    apr.find(
+        (error,data)=>{
+            if(error){
+                res.send(error)
+                return
+            }
+            else{
+                res.send(data)
+            }
+        }
+    )
+})
+
+
 app.listen(3000,()=>{
     console.log("Successfully running on http://localhost:3000")
 })

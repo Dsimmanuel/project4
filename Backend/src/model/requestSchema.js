@@ -2,6 +2,8 @@ const Mongoose = require ("mongoose")
 const schema = Mongoose.Schema;
 Mongoose.connect("mongodb+srv://Immanuel:immanuel@cluster0.rnux5pm.mongodb.net/ProjectDB?retryWrites=true&w=majority")
 const requestSchema = new schema({
+    loanid:{type: String,required:true},
+    loanName:{type:String,required:true},
     name:{type: String,required:true},
     income:{type: String,required:true},
     aadhar:{type: String,required:true},
