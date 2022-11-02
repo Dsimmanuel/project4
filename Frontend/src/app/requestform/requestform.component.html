@@ -1,0 +1,86 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+       
+        <div class="row g-3">
+          <h1 align="center">
+            <small class="text-muted"><b>Loan Applicants</b></small>
+          </h1>
+        &nbsp;
+        
+        <table class="table table-striped">
+            <thead>
+                <tr align="center">
+                  
+                  <th scope="col"><b>Applicant Name</b></th>
+                  <th scope="col"><b>Annual Income</b></th>
+                  <th scope="col"><b>Aadhar Number</b></th>
+                  <th scope="col"><b>Pancard Number</b></th>
+                  <th scope="col"><b>Account Number</b></th>
+                  <th scope="col"><b>IFSC Code</b></th>
+                  <th></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr *ngFor="let i of data">
+                  <td>
+                    <div align="center">
+                      {{i.name}}
+                    </div>
+                  </td>
+                  <td>
+                    <div align="center">
+                      {{i.income}}
+                    </div>
+                  </td>
+                  
+                  <td>
+                    <div align="center">
+                      {{i.aadhar}}
+                    </div>
+                  </td>
+                  
+                  <td>
+                    <div align="center">
+                      {{i.pan}}
+                    </div>
+                  </td>
+                  <td>
+                    <div align="center" >
+                      {{i.account}}
+                    </div>
+                  </td>
+                  <td>
+                    <div align="center">
+                      {{i.ifsc}}
+                    </div>
+                  </td> 
+                  <table>
+                    <tr>
+                      <td>
+                        <button class="btn btn-primary" (click)="Approve(i)">Approve</button>
+                      </td>
+                      &nbsp;
+                      <td>
+                        <button class="btn btn-primary" (click)="Reject(i)">Reject</button>
+                      </td>
+                    </tr>
+                  </table>
+                </tbody>
+          </table>
+
+
+
+    </div>
+</div>
+</div>
+</div>
+
+
+  <button type="button" class="btn btn-primary" routerLink="/side" style="margin-left: 120rem;margin-top: -180rem;">Go back</button>
+  
+
+        
+        

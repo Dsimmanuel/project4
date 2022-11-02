@@ -1,0 +1,20 @@
+<div class="container">
+    <h1 align="center">User Savings</h1>
+  <br>
+    <form #aboutsave="ngForm" (ngSubmit)="Addsavings()">
+      <label for="name" class="form-label">username:</label>
+      <input type="text" class="form-control" id="username" name="username"  [(ngModel)]="save.username">
+  
+      <label for="date" class="form-label">Date :</label>
+      <input type="date" name="date" id="" class="form-control" id="date"  [(ngModel)]="save.date">
+  
+      <label for="deposite " class="form-label">Deposite Amount :</label>
+      <input type="text" class="form-control" id="deposite " name="deposite"  [(ngModel)]="save.deposite">
+  
+     
+      <input type="submit" value="Submit" >
+    </form>
+  </div>
+  <div align="right" style="margin-right:150px;margin-bottom:40px;color:blue">
+    <a href="#" class="btn btn-primary" routerLink="/side" style="margin-top: -104rem;margin-right: -14rem;">Go Back</a>
+    </div>

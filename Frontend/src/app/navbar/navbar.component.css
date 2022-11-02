@@ -1,0 +1,55 @@
+.navbar .ms-auto{
+  margin-right: 200px;
+  
+}
+
+.containers {
+  margin-right: 100px;
+}
+
+.logo img{
+  height: 6rem;
+  margin-left: 50px;
+}
+
+.navbar a{
+  margin:0 1rem;
+  font-size: 1.6rem;
+  color:rgb(0, 0, 0);
+}
+
+.navbar a:hover{
+  color:var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
+
+.containers {
+  background: #fff;
+  height: 45px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+.containers:hover .input {
+  width: 250px;
+}
+.containers .input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+}
+
+.containers .fas {
+  color: #060108;
+}
+
+

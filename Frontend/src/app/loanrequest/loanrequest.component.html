@@ -1,0 +1,53 @@
+
+<div style="display:flex;flex-direction:row;height:100%;width:100%">
+    <img style="width:50%;margin-left:50px;margin-top:50px;" src="assets/image1.webp" />
+    <div style="font-family:'Times New Roman', Times, serif;color:rgb(9, 9, 131);width:40%;box-shadow:5px 0px 45px rgba(0, 0, 0, 0.24);border: 1px solid rgb(118, 110, 110);
+    height:6oopx;margin-top:100px;border-radius:10px;;" class="container">
+    <form #requestloan="ngForm" (ngSubmit)="Applyloan()">
+        <br>
+        <div class="data">
+            <b>APPLICANT NAME :</b>
+            <input type="text" placeholder="Applicant Name" id="name" name="name" [(ngModel)]="apply.name"/>
+        </div>
+        <div class="data">
+            <b>ANNUAL INCOME :</b>
+            <input type="text" placeholder="Annual Income" id="income" name="income" [(ngModel)]="apply.income"/>
+        </div>
+        <div class="data">
+            <b>AADHAR NO : </b>
+            <input type="text" placeholder="Aadhar Number" id="aadhar" name="aadhar" [(ngModel)]="apply.aadhar"/>
+        </div>
+        <div class="data">
+            <b>PAN NO :</b>
+            <input type="text" placeholder="Pancard Number" id="pan" name="pan" [(ngModel)]="apply.pan"/>
+            
+        </div>
+        <div class="data">
+            <b>ACCOUNT NO :</b>
+            <input type="text" placeholder="Account Number" id="account" name="account" [(ngModel)]="apply.account"/>
+        </div>
+        <div class="data">
+            <b>IFSC CODE :</b>
+            <input type="text" placeholder="Ifsc Code" id="ifsc" name="ifsc" [(ngModel)]="apply.ifsc"/>
+        </div>
+        <div class="box">
+            <input type="checkbox"/>I hearby declare that all the above given data's are valid.
+        </div>
+        <div>
+            <input style="background-color:rgb(9, 9, 131);color:white;width: 100px;height:30px;margin-left:250px;margin-top: 40px;" type="submit" value="Apply"/>
+          
+        </div>
+       
+ </form>
+    </div>        
+    </div>
+    <div>
+        <div align="right" style="margin-right:150px;margin-bottom:40px;color:blue">
+        <a  class="btn btn-primary" routerLink="/manloan">Go Back</a>
+        </div>
+       
+    </div>
+    
+  &nbsp;&nbsp;<button type="button" class="btn btn-primary" routerLink="/ul" style="margin-left: 120rem;margin-top: -15rem;">Home</button>
+  
+    

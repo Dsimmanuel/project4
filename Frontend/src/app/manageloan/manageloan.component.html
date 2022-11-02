@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+      <div class="row g-3">
+        <h1 align="center">
+          <small class="text-muted"><b>APPLY LOAN ONLINE</b></small>
+        </h1>
+      &nbsp;
+      
+        <table class="table table-bordered border-primary">
+          <thead>
+            <tr align="center">
+              
+              <th scope="col"><b>LoanID</b></th>
+              <th scope="col"><b>Scheme</b></th>
+              <th scope="col"><b>LoanPlan</b></th>
+              <th scope="col"><b>Interest</b></th>
+              <th scope="col"><b>Amount</b></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let i of data">
+              <td align="center">
+                <div >
+                  {{i.loanid}}
+                </div>
+              </td>
+              
+
+              <td>
+                <div align="center">
+                  {{i.loanName}}
+                </div>
+              </td>
+              
+              <td>
+                <div align="center" >
+                  {{i.loanPlan}}
+                </div>
+              </td>
+              
+              <td>
+                <div align="center">
+                  {{i.amount}}
+                </div>
+              </td>
+              <td>
+                <div align="center">
+                  {{i.interest}}
+                </div>
+              </td>
+
+              <td align="center">
+                <div>
+                 <tr> <td><button class="btn btn-primary" routerLink="/request"  routerLinkActive="active-link" ><b>APPLY</b></button></td></tr>
+                </div>
+              </td>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

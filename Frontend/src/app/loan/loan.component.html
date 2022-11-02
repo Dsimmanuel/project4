@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Loan</h1>
+<br>
+  <form #aboutloan="ngForm" (ngSubmit)="Addloan()">
+    <label for="loanid" class="form-label">Loan ID :</label>
+    <input type="text" class="form-control" id="loanid" name="loanid" [(ngModel)]="loan.loanid">
+
+    <label for="lname" class="form-label">Loan Name :</label>
+    <input type="text" class="form-control" id="lname" name="loanname" [(ngModel)]="loan.loanName">
+
+    <label for="lplan" class="form-label">Loan Plan :</label>
+    <input type="text" class="form-control" id="lplan" name="loanplan" [(ngModel)]="loan.loanPlan">
+
+    <label for="amount" class="form-label">Amount :</label>
+    <input type="text" class="form-control" id="amount" name="amount" [(ngModel)]="loan.amount">
+
+    <label for="interest" class="form-label">Interest :</label>
+    <input type="text" class="form-control" id="interest" name="interest" [(ngModel)]="loan.interest">
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div >
+  <a href="#" class="btn btn-primary">Go Back</a>
+  </div>
+  
+  <button type="button" class="btn btn-primary" routerLink="/side" style="margin-left: 120rem;margin-top: -157rem;">Go back</button>
+  

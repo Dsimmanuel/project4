@@ -1,0 +1,82 @@
+
+<div class="main">
+  <div class="container">
+    <div class="row ">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 g-3 ">
+            <div class="row">
+             
+                
+                <div class="container " >
+                    
+                      
+                      
+                  <h1 align="center">
+                    <small class="text-muted">User Details</small>
+                  </h1>
+                      <div>
+                        <a routerLink="/add"><button class="btn btn-success" align="margin-right">Add User</button></a>
+                      </div>
+                      <hr >
+                      <div class="table-responsive">
+                        
+                        <table class="table">
+                            <thead class="table-secondary">
+                              <tr align="center">
+                                <th scope="col">Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Phone Number</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">User Name</th>
+                               
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let i of data">
+                                <th scope="row">                               
+                                  <div align="center">
+                                    {{i.name}}
+                                  </div>
+                                </th>
+                                <td>
+                                  <div align="center">
+                                    {{i.address}}
+                                  </div>
+                                </td>
+                                <td>
+                                  <div align="center">
+                                    {{i.phoneno}}
+                                  </div>
+                                </td>
+                                <td>
+                                  <div align="center">
+                                    {{i.email}}
+                                  </div>
+                                </td>
+                                <td>
+                                  <div align="center">
+                                    {{i.username}}
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                        <button class="btn btn-danger"  (click)="Deleteuser(i)" align="center">Delete</button>  
+                                  </div>
+                                </td> 
+                              </tr>
+                            </tbody>
+                        </table>
+                      
+                      </div>
+                      </div>
+                      <hr>
+                  
+              
+        </div>
+            </div>
+    </div>
+</div>
+</div>
+
+  <button type="button" class="btn btn-primary" routerLink="/side" style="margin-left: 120rem;margin-top: -37rem;">Go back</button>
+  
+

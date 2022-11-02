@@ -1,0 +1,26 @@
+
+<div class="container">
+  <br>
+    <form  #passbook="ngForm" (ngSubmit)="Viewsavings()">
+      <label for="userame" class="form-label">username:</label>
+      <input type="text" class="form-control" id="username" name="username" [(ngModel)]="cash.username">
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+ 
+  <div class="container">
+    <br>
+    <div class="card" >
+      <img src="assets/bond.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">username: {{data1.username}}</h5>
+        <p class="card-text">Date: {{data1.date}}</p>
+        <p class="card-text">Deposite Amount: {{data1.deposite}}</p>
+        
+      </div>
+    </div>
+      
+    </div>
+    

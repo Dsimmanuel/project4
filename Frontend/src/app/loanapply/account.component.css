@@ -1,0 +1,41 @@
+.user-profile .card {
+    border-radius: 10px;
+    
+}
+
+.user-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+}
+
+.user-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.user-profile .card p {
+    font-size: 17px;
+    color: #000;
+}
+
+.btn {
+    font-size: medium;
+}
+
+button.btn:hover
+{
+    background-color: lightblue;
+}
+
+.card {
+    background-color: antiquewhite;
+}
+
+.profile {
+    margin-left: 500px;
+    margin-top: 70px;
+}

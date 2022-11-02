@@ -1,0 +1,32 @@
+<form style="background-color: rgb(253, 250, 246);" #user="ngForm">
+    <div  class="container">
+      <h1 align="center" style="font-family: 'Times New Roman', Times, serif;color:rgb(16, 74, 74)"><b><u>Add User</u></b></h1>
+      <hr >
+     <div style="color:rgb(16, 74, 74)">
+      <label for="text"><b>NAME</b></label>
+      <input name="name" type="text" placeholder="Name" [(ngModel)]="register.name" required>
+  
+      <label for="text"><b>ADDRESS</b></label>
+      <input name="address"type="text" placeholder="Address" [(ngModel)]="register.address" required>
+  
+      <label for="text"><b>PHONE NO</b></label>
+      <input name="pno"  type="text" placeholder="Phone number" [(ngModel)]="register.phoneno" required>
+
+      <label for="email"><b>EMAIL</b></label>
+      <input name="email" type="text" placeholder="Enter Email" [(ngModel)]="register.email" required>
+
+      <label for="email"><b>USERNAME</b></label>
+      <input type="text" placeholder="Enter Email" name="uname"  [(ngModel)]="register.username" required>
+
+      <label for="PASSWORD"><b>PASSWORD</b></label>
+      <input name="password" type="password" placeholder="Enter password" [(ngModel)]="register.password"  required>
+    </div>
+      <hr>     
+      <button type="submit" class="registerbtn" (click)="Adduser()">Add</button>
+    </div>
+    <div *ngIf="message" align="center"><p><b>{{message}}</b></p></div>
+  </form>
+  <div align="right" style="margin-right:150px;margin-bottom:40px;color:blue">
+    <a href="#" class="btn btn-primary">Go Back</a>
+    </div>
+    

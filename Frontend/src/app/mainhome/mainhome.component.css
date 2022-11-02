@@ -1,0 +1,96 @@
+.head {
+    margin-left: 260px;
+}
+
+.jumbotron {
+    width: 550px;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#fff;
+}
+
+.about .row{
+
+    display: flex;
+    align-items: top;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:rgb(240,167,9);
+}
+
+
+.about .row .content h4{
+    font-size: 2rem;
+    color:rgb(240, 167, 9);
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:rgb(226, 228, 208);
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+.about .heading {
+   color: black;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.home .content h3{
+    
+    color: #13131a;
+}
+
+.home .content p{
+    font-family: serif;
+    color: #13131a;
+}
+
+
+

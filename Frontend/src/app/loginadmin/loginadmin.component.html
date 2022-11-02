@@ -1,0 +1,35 @@
+<div style="width:100%;height:100%;;
+padding:60px;">
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="max-width:370px;margin-top:20px;border:1px solid
+         black;height:600px;margin-left:37%;background:linear-gradient(to top right, #ffffff 0%, #ffffff 100%);
+         ;border-radius:15px">
+
+            <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <h2 style="color:black;font-weight:bolder;text-align: center;margin-top:50px;"><b>administrator</b></h2>
+            </div>
+
+            <form #userRegister="ngForm"  class="needs-validation" novalidate  (ngSubmit)="Logadmin()" >
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="margin-left:50px;margin-top:30px;">
+                  <i class="fa fa-user icon"></i>
+                  <label style="font-weight: bold;font-size:16px;margin-left:10px;" class="form-label">Username</label>
+                  <input style="border-bottom:solid 1px rgb(58, 52, 52);width:150%" type="text" class="form-control" placeholder="Type your username" [(ngModel)]="username" required>
+                  <div class="invalid-feedback">
+                    name field required
+                  </div>
+            </div>
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="margin-left:50px;margin-top:15px">
+            <i class="fa fa-lock icon"></i>
+         <label style="font-weight: bold;font-size:16px;margin-left:10px;" class="form-label">Password</label>
+         <input style="border-bottom:solid 1px rgb(58, 52, 52);width:150%" type="password" [(ngModel)]="password" class="form-control" placeholder="Type your password" required minlength="6" maxlength="20">
+         <div class="invalid-feedback">
+           Invalid Password
+         </div>
+        </div>
+         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"  style="margin-left:60px;margin-top:30px">
+            <button class="btn btn-info" style="width:250px;height:50px;background: linear-gradient(to left, #cc0099 0%, #00ffff 100%)
+            ;border-radius:30px;"> <a href="#ecom" routerLink="/side" routerLinkActive="active-link"><b>Login</b></a></button>
+         </div>
+         <h5 align="center" style="margin-top:30px;">Admin Portal</h5>
+        </form>
+    </div>
+ </div>
