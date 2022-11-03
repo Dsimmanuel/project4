@@ -350,7 +350,6 @@ app.get("/home",(req,res)=>{
 
 app.post("/register",(req,res)=>{
     const data=req.body
-    data.role="student"
     console.log(data)
     const ob=new register(data)
     ob.save(
@@ -445,6 +444,21 @@ app.get("/Viewrqt",(req,res)=>{
 })
 
 
+app.post("/aprloan",(req,res)=>{
+    console.log(req.body.name)
+    apr.find({name:req.body.name},
+        (error,data)=>{
+            if(error){
+                res.send(error)
+                return
+            }
+            if(data){
+                console.log(data)
+                res.send(data)
+            }
+        }
+    )
+})
 app.listen(3000,()=>{
     console.log("Successfully running on http://localhost:3000")
 })

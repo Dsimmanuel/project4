@@ -6,6 +6,7 @@ import { LoanComponent } from './loan/loan.component';
 })
 export class ApiService {
   Loan:any=[]
+  USER_KEY:any=[]
   constructor(private http:HttpClient) { }
 
 
@@ -19,6 +20,19 @@ export class ApiService {
     const loan = window.sessionStorage.getItem(this.Loan);
     if (loan) {
       return JSON.parse(loan);
+    }
+  }
+
+  public saveUser(user: any): void {
+    window.sessionStorage.removeItem(this.USER_KEY);
+    window.sessionStorage.setItem(this.USER_KEY, JSON.stringify(user));
+
+  }
+
+  public getUser(): any {
+    const user = window.sessionStorage.getItem(this.USER_KEY);
+    if (user) {
+      return JSON.parse(user);
     }
   }
 
@@ -117,6 +131,12 @@ deletesavings=(id:any)=>{
 }
 Deleteapproved=(id:any)=>{
   return this.http.delete<any>("http://localhost:3000/deleteapproved/"+id)
+}
+
+viewapruser=(loan:any)=>{
+  
+  return this.http.post<any>("http://localhost:3000/aprloan",loan)
+
 }
 
 }

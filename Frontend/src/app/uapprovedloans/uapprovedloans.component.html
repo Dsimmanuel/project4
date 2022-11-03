@@ -16,23 +16,22 @@
                     <div class="row">
                         <div class="col-sm-6">
                           <div class="card">
-                            <div class="card-body">
-                              <h5 class="card-title"></h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <div class="card-body" *ngFor="let i of data">
+                              
+                              <p class="card-text">Loan Id : {{i.loanid}}</p><br>
+                              <p class="card-title">Loan Name : {{i.loanName}}</p><br>
+                              <p class="card-text">Applicant Name:{{i.name}}</p><br>
+                              <p class="card-text">Income :{{i.income}}</p><br>
+                              <p class="card-text">Aadhar No : {{i.aadhar}}</p><br>
+                              <p class="card-text">Pan Card : {{i.pan}}</p><br>
+                              <p class="card-text">Accpunt No : {{i.account}}</p><br>
+                              <p class="card-text">IFSC code : {{i.ifsc}}</p><br>
+                           
                             
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="card-body">
-                              <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                        
                        
                         
                           
